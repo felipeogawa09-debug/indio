@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Sofia Ribeiro (@sofiaribeiro) • Privacy Oficial</title>
+  <meta name="description" content="Assine o perfil oficial de Sofia Ribeiro no Privacy e tenha acesso exclusivo a ensaios diários em 4K, bastidores, vídeos sem censura e chat VIP direto.">
+  <meta name="theme-color" content="#ff5900">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sofia Ribeiro (@sofiaribeiro) • Privacy">
+  <meta property="og:description" content="Acesse o conteúdo exclusivo de Sofia Ribeiro no Privacy. Planos com liberação instantânea via PIX.">
+  <meta property="og:image" content="assets/images/cover.svg">
+  <meta property="og:type" content="profile">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Container Estreito e Centralizado (Padrão Oficial Privacy Mobile/Desktop) -->
+  <main class="page-container" id="pageContainer">
+    
+    <!-- Top Bar Superior -->
+    <header class="top-nav">
+      <button class="nav-btn" aria-label="Voltar" onclick="window.history.back()">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      
+      <div class="nav-title-box">
+        <div class="nav-name-row">
+          <span class="nav-creator-name" id="navCreatorName">Sofia Ribeiro</span>
+          <span class="verified-badge-icon" title="Perfil Verificado">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff5900">
+              <path d="M12 2L15.09 5.09L19.45 4.55L20.45 8.91L24 12L20.45 15.09L19.45 19.45L15.09 18.91L12 22L8.91 18.91L4.55 19.45L3.55 15.09L0 12L3.55 8.91L4.55 4.55L8.91 5.09L12 2Z"/>
+              <path d="M9.5 12L11 13.5L14.5 10" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+        <span class="nav-posts-count" id="navPostsCount">164 Postagens</span>
+      </div>
+
+      <button class="nav-btn" id="shareBtn" aria-label="Compartilhar">
+        <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="18" cy="5" r="3"></circle>
+          <circle cx="6" cy="12" r="3"></circle>
+          <circle cx="18" cy="19" r="3"></circle>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+        </svg>
+      </button>
+    </header>
+
+    <!-- Banner Horizontal de Capa -->
+    <div class="profile-cover">
+      <img src="assets/images/cover.svg" alt="Capa de perfil" class="cover-image" id="profileCover">
+      <div class="cover-overlay"></div>
+    </div>
+
+    <!-- Informações do Perfil do Criador -->
+    <section class="profile-header">
+      <div class="avatar-wrapper">
+        <div class="avatar-ring">
+          <img src="assets/images/avatar.svg" alt="Foto de perfil de Sofia Ribeiro" class="avatar-img" id="profileAvatar">
+        </div>
+      </div>
+
+      <div class="profile-info">
+        <div class="creator-title-row">
+          <h1 class="creator-name" id="creatorName">Sofia Ribeiro</h1>
+          <span class="verified-badge-icon" title="Conta Oficial Verificada">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="#ff5900">
+              <path d="M12 2L15.09 5.09L19.45 4.55L20.45 8.91L24 12L20.45 15.09L19.45 19.45L15.09 18.91L12 22L8.91 18.91L4.55 19.45L3.55 15.09L0 12L3.55 8.91L4.55 4.55L8.91 5.09L12 2Z"/>
+              <path d="M9.5 12L11 13.5L14.5 10" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+
+        <p class="creator-username" id="creatorUsername">@sofiaribeiro</p>
+
+        <p class="creator-bio" id="creatorBio">
+          ✨ Criadora exclusiva no Privacy. Ensaios diários em 4K, bastidores, vlogs e chat VIP liberado para assinantes.
+        </p>
+
+        <div class="creator-location" id="creatorLocation">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>São Paulo, Brasil</span>
+        </div>
+
+        <!-- Estatísticas do Perfil (Postagens, Mídias, Curtidas) -->
+        <div class="profile-stats-row">
+          <div class="stat-item">
+            <span class="stat-number" id="statPosts">164</span>
+            <span class="stat-label">Postagens</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" id="statMedia">382</span>
+            <span class="stat-label">Mídias</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" id="statLikes">45.8K</span>
+            <span class="stat-label">Curtidas</span>
+          </div>
+        </div>
+
+        <!-- Ícones de Redes Sociais Funcionais -->
+        <div class="social-links-row" id="socialLinksRow">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.82 4.5 6.28 6.28 0 0 0 1.89-4.49V8.78a8.28 8.28 0 0 0 4.88 1.58V6.91a4.84 4.84 0 0 1-1-.22z"/>
+            </svg>
+          </a>
+          <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOX DE ASSINATURA EM LARANJA (IDENTIDADE PRIVACY) -->
+    <section class="subscription-section" id="subscriptionSection">
+      <div class="subscription-header">
+        <div class="sub-header-left">
+          <span class="sub-lock-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </span>
+          <span class="sub-title">ASSINATURA</span>
+        </div>
+        <span class="sub-pix-tag">LIBERAÇÃO VIA PIX</span>
+      </div>
+
+      <!-- Três Planos Configuráveis -->
+      <div class="plans-container" id="plansContainer">
+        <!-- Renderizado dinamicamente via script.js a partir de config/plans.json -->
+      </div>
+
+      <!-- Botão Principal de Assinatura -->
+      <button class="cta-subscribe-btn" id="ctaSubscribeBtn">
+        <span class="btn-lock-icon">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        </span>
+        <span class="cta-btn-text" id="ctaBtnText">ASSINAR AGORA — R$ 29,90</span>
+      </button>
+
+      <!-- Garantias de Segurança -->
+      <div class="security-guarantees">
+        <div class="guarantee-item">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#22c55e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <polyline points="9 12 11 14 15 10"/>
+          </svg>
+          <span>Pagamento Seguro</span>
+        </div>
+        <div class="guarantee-item">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#ff5900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+          <span>Liberação Imediata</span>
+        </div>
+        <div class="guarantee-item">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#3b82f6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          <span>Acesso Discreto</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABAS DE NAVEGAÇÃO DE CONTEÚDO (POSTAGENS / MÍDIAS) -->
+    <nav class="content-tabs" aria-label="Abas de Conteúdo">
+      <button class="tab-btn active" id="tabPosts" data-target="posts">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="3" y1="9" x2="21" y2="9"></line>
+          <line x1="9" y1="21" x2="9" y2="9"></line>
+        </svg>
+        <span>POSTAGENS (164)</span>
+      </button>
+
+      <button class="tab-btn" id="tabMediaBtn" data-target="media">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+          <circle cx="8.5" cy="8.5" r="1.5"></circle>
+          <polyline points="21 15 16 10 5 21"></polyline>
+        </svg>
+        <span>MÍDIAS (382)</span>
+      </button>
+    </nav>
+
+    <!-- FEED DE PUBLICAÇÕES BLOQUEADAS -->
+    <section class="feed-container" id="feedContainer">
+      <!-- Injetado dinamicamente via script.js -->
+    </section>
+
+    <!-- Rodapé Minimalista -->
+    <footer class="page-footer">
+      <div class="footer-brand">
+        <span class="privacy-badge">PRIVACY</span>
+        <span class="footer-copy">Todos os direitos reservados. Conteúdo protegido por direitos autorais.</span>
+      </div>
+      <div class="footer-links">
+        <a href="#termos" onclick="event.preventDefault()">Termos de Uso</a>
+        <span>•</span>
+        <a href="#privacidade" onclick="event.preventDefault()">Privacidade</a>
+        <span>•</span>
+        <a href="#ajuda" onclick="event.preventDefault()">Ajuda</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- MODAL / BOTTOM SHEET DE IDENTIFICAÇÃO E PAGAMENTO PIX    -->
+  <!-- ======================================================== -->
+  <div class="modal-backdrop" id="checkoutModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content" id="modalContent">
+      
+      <!-- Barra de Arraste Mobile -->
+      <div class="modal-drag-indicator" aria-hidden="true"></div>
+
+      <!-- Botão Fechar Modal -->
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Fechar Modal">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- ETAPA 1: IDENTIFICAÇÃO DO COMPRADOR -->
+      <div class="modal-step" id="stepIdentification">
+        <div class="modal-step-header">
+          <h2 class="modal-title">Identificação do Comprador</h2>
+          <p class="modal-subtitle">Preencha seus dados para emitir a cobrança oficial via PIX.</p>
+        </div>
+
+        <!-- Resumo do Plano Selecionado -->
+        <div class="plan-summary-card">
+          <div class="summary-plan-info">
+            <span class="summary-plan-name" id="summaryPlanName">3 Meses de Acesso</span>
+            <span class="summary-plan-period" id="summaryPlanPeriod">Acesso completo por 90 dias</span>
+          </div>
+          <div class="summary-plan-pricing">
+            <span class="summary-old-price" id="summaryOldPrice">R$ 89,70</span>
+            <span class="summary-final-price" id="summaryFinalPrice">R$ 69,90</span>
+          </div>
+        </div>
+
+        <!-- Formulário de Identificação -->
+        <form id="buyerForm" class="buyer-form" novalidate>
+          <div class="form-group">
+            <label for="buyerName" class="form-label">Nome Completo</label>
+            <div class="input-wrapper">
+              <span class="input-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </span>
+              <input type="text" id="buyerName" name="buyerName" class="form-input" placeholder="Ex: João da Silva" required autocomplete="name">
+            </div>
+            <span class="field-error-msg" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="buyerEmail" class="form-label">Seu Melhor E-mail</label>
+            <div class="input-wrapper">
+              <span class="input-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </span>
+              <input type="email" id="buyerEmail" name="buyerEmail" class="form-input" placeholder="seuemail@exemplo.com" required autocomplete="email">
+            </div>
+            <span class="field-error-msg" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="buyerCpf" class="form-label">CPF (Exigência do Banco Central para PIX)</label>
+            <div class="input-wrapper">
+              <span class="input-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <line x1="2" y1="10" x2="22" y2="10"></line>
+                </svg>
+              </span>
+              <input type="tel" id="buyerCpf" name="buyerCpf" class="form-input" placeholder="000.000.000-00" maxlength="14" required autocomplete="off">
+            </div>
+            <span class="field-error-msg" id="cpfError"></span>
+          </div>
+
+          <!-- Mensagem Geral de Erro -->
+          <div class="form-general-error" id="formGeneralError" style="display: none;"></div>
+
+          <!-- Botão Gerar PIX -->
+          <button type="submit" class="submit-pix-btn" id="submitPixBtn">
+            <span class="btn-spinner" id="pixBtnSpinner" style="display: none;"></span>
+            <span class="btn-text" id="submitPixBtnText">GERAR PIX — R$ 69,90</span>
+          </button>
+        </form>
+
+        <p class="pix-legal-notice">
+          Ao prosseguir, você concorda com os Termos de Assinatura. Seus dados estão seguros e são criptografados de ponta a ponta.
+        </p>
+      </div>
+
+      <!-- ETAPA 2: DESIGN DA TELA DE PAGAMENTO PIX NXGATE -->
+      <div class="modal-step" id="stepPaymentPix" style="display: none;">
+        <div class="modal-step-header text-center">
+          <div class="pix-badge-header">
+            <span class="pix-logo-text">PAGAMENTO INSTANTÂNEO PIX</span>
+          </div>
+          <h2 class="modal-title">Finalize sua assinatura</h2>
+          <p class="modal-subtitle">Abra o app do seu banco e pague escaneando o QR Code ou copiando o código.</p>
+        </div>
+
+        <!-- Detalhes do Pedido -->
+        <div class="pix-order-details">
+          <div class="order-detail-row">
+            <span class="detail-label">Plano selecionado:</span>
+            <span class="detail-value" id="pixDetailPlanName">3 Meses de Acesso</span>
+          </div>
+          <div class="order-detail-row">
+            <span class="detail-label">Identificação do Pedido:</span>
+            <span class="detail-value order-id-code" id="pixOrderId">#TX-AGUARDANDO</span>
+          </div>
+          <div class="order-detail-row highlight-amount-row">
+            <span class="detail-label">Valor total a pagar:</span>
+            <span class="detail-amount" id="pixDetailAmount">R$ 69,90</span>
+          </div>
+        </div>
+
+        <!-- Timer Regressivo de Expiração -->
+        <div class="expiration-timer-box">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span>Tempo restante para pagar: <strong id="pixTimer">15:00</strong></span>
+        </div>
+
+        <!-- Card do QR Code PIX -->
+        <div class="qr-code-card">
+          <div class="qr-code-wrapper" id="qrCodeContainer">
+            <div class="qr-loading-placeholder">
+              <span class="spinner-orange"></span>
+              <span>Gerando QR Code...</span>
+            </div>
+          </div>
+          <span class="qr-caption">Aponte a câmera do seu banco para a imagem acima</span>
+        </div>
+
+        <!-- Campo Pix Copia e Cola -->
+        <div class="copy-paste-container">
+          <label class="copy-paste-label">Ou use o PIX Copia e Cola:</label>
+          <div class="copy-paste-input-box">
+            <input type="text" id="pixCopiaColaInput" readonly class="copy-paste-input" value="Carregando código PIX...">
+          </div>
+          <button type="button" class="btn-copy-pix" id="btnCopyPix">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span id="btnCopyPixText">COPIAR CÓDIGO PIX</span>
+          </button>
+        </div>
+
+        <!-- Status e Indicador de Processamento em Tempo Real -->
+        <div class="payment-status-monitor">
+          <div class="pulse-indicator">
+            <span class="pulsing-dot"></span>
+            <span class="status-monitor-text" id="statusMonitorText">Aguardando confirmação do banco...</span>
+          </div>
+          <p class="status-auto-notice">Esta tela atualiza automaticamente assim que o pagamento for detectado.</p>
+        </div>
+
+        <!-- Botão Manual para Verificar Pagamento -->
+        <div class="verify-payment-actions">
+          <button type="button" class="btn-verify-now" id="btnVerifyNow">
+            <span class="btn-spinner" id="verifySpinner" style="display: none;"></span>
+            <span id="btnVerifyText">Verificar pagamento agora</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- ETAPA 3: PAGAMENTO APROVADO E ACESSO CONFIRMADO -->
+      <div class="modal-step" id="stepPaymentSuccess" style="display: none;">
+        <div class="success-content text-center">
+          <div class="success-icon-badge">
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="#22c55e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+
+          <h2 class="success-title">Pagamento aprovado!</h2>
+          <p class="success-subtitle">Sua assinatura no perfil de <strong>Sofia Ribeiro</strong> foi confirmada e ativada com sucesso.</p>
+
+          <div class="success-receipt-card">
+            <div class="receipt-row">
+              <span>Status:</span>
+              <strong class="receipt-status-paid">CONFIRMADO</strong>
+            </div>
+            <div class="receipt-row">
+              <span>Plano:</span>
+              <strong id="successPlanName">3 Meses de Acesso</strong>
+            </div>
+            <div class="receipt-row">
+              <span>Valor pago:</span>
+              <strong id="successAmount">R$ 69,90</strong>
+            </div>
+            <div class="receipt-row">
+              <span>Transação:</span>
+              <span class="receipt-tx" id="successTxId">tx_confirmada</span>
+            </div>
+          </div>
+
+          <button type="button" class="btn-access-feed" id="btnAccessFeed">
+            ACESSAR CONTEÚDO LIBERADO
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Flutuante -->
+  <div class="toast-notification" id="toastNotification" aria-live="polite">
+    <span class="toast-message" id="toastMessage">Código PIX copiado!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/qrcode.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
